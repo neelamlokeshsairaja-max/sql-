@@ -1,0 +1,73 @@
+what is data : (raw facts or figure without context)\
+ex: (101,mail)
+
+
+what is field:  (columns or attribute)
+
+Ex: (employee id ,salary, address)
+
+
+
+what is record: (tuples or rows)
+
+ex: (name, sal, id, add)
+
+
+
+what is database : (records store together)
+
+ex:(contain the employee records)
+
+
+what is client sever architecture: ( create the web application)
+
+client : (send the request to sever and to get response to sever )
+
+server : (take request from client) ( response is correct it will give to client and reponse is not correct it will show the error).
+
+protocol : (need to follow the rules regulations)
+
+
+Data models in dbms : 1.rdms 2. hireachal 3. network 
+
+
+Identifiers : 1. should not start with dights
+              2. we should not space
+              3. resver words are not declared
+              4. maxium length is 15
+
+
+
+
+
+SQL : (structure query language)(to communicate with data base)(insert, delete, update)
+
+MySQL : (store inside the data base)
+
+
+SQL commands :
+=============
+
+DDL : (data definition languagae)(define and modify data base objects)(tbales,index)
+
+DML : (data manuplation langagge)(manipulate the data )(delete, update ,insert)
+
+DCL : (datav control language) (mange permission and control data base)
+
+TCL : (transitional control language )(mange transcation to maintain data integrity)\
+
+DQL : ( data query language)(viewing the records)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
