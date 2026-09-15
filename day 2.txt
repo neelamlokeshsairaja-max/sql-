@@ -1,0 +1,81 @@
+
+mysql> use da6;
+Database changed
+mysql> show tables
+    -> ^C
+mysql> show tables;
+Empty set (0.06 sec)
+
+mysql> create database da6;
+ERROR 1007 (HY000): Can't create database 'da6'; database exists
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| da6                |
+| doctore            |
+| information_schema |
+| k3                 |
+| mysql              |
+| performance_schema |
+| pf6                |
+| product            |
+| r2                 |
+| sys                |
++--------------------+
+10 rows in set (0.01 sec)
+
+mysql> create table students(
+    -> sno int primary key,
+    -> sname varchar(68),
+    -> semail varchar(67)
+    -> );
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> insert into students values(111,'sai','sai@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select*from students;
++-----+-------+---------------+
+| sno | sname | semail        |
++-----+-------+---------------+
+| 111 | sai   | sai@gmail.com |
++-----+-------+---------------+
+1 row in set (0.00 sec)
+
+mysql> create user raja identified by 'raja2003';
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> create user poori identified by 'poori2002';
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> select*from students;
++-----+-------+---------------+
+| sno | sname | semail        |
++-----+-------+---------------+
+| 111 | sai   | sai@gmail.com |
++-----+-------+---------------+
+1 row in set (0.00 sec)
+
+mysql> '''permission using grant'''
+    ->
+    -> ^C
+mysql>
+mysql>
+mysql>
+mysql> grant select,insert,update on students to raja;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> grant select,drop on students to poori;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> ''' revoke '''
+    ->
+    ->
+    -> ^C
+mysql>
+mysql> revoke insert, update on students from raja;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> revoke select on students from poori;
+Query OK, 0 rows affected (0.01 sec)
