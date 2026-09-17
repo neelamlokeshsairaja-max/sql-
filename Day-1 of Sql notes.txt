@@ -1,4 +1,4 @@
-What is Data?
+ What is Data?
 ---- raw facts or figures without context
 example:- 101, mails,5000,hyd
 
